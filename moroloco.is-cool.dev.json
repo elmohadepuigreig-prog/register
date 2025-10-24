@@ -1,0 +1,28 @@
+{
+    "description": "Project Description",
+    "domain": "is-not-a.dev",
+    "subdomain": "example",
+
+    "owner": {
+        "repo": "https://github.com/elmohadepuigreig-prog/register",
+        "email": "cdicorporation1@gmail.com"
+    },
+
+    "record": {
+        "A": ["1.1.1.1", "1.0.0.1"],
+        "AAAA": ["::1", "::2"],
+        "CNAME": "example.com",
+        "MX": ["mx1.moroloco.is-cool.dev", "mx2.moroloco.is-cool.dev"],
+        "TXT": ["example_verification=1234567890"],
+        "CAA": [
+            { "flags": 0, "tag": "issue", "value": "letsencrypt.org" },
+            { "flags": 0, "tag": "issuewild", "value": "sectigo.com" }
+        ],
+        "SRV": [
+            { "priority": 10, "weight": 60, "port": 5060, "target": "sipserver.moroloco.is-cool.dev" },
+            { "priority": 20, "weight": 10, "port": 5061, "target": "sipserver.moroloco.is-cool.dev" }
+        ]
+    },
+
+    "proxied": false
+}
